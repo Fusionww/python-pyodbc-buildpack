@@ -3,6 +3,8 @@
 cat <<EOF
 ---
 config:
+  PATH: "$PATH:/app/.apt/usr/bin"
   LD_LIBRARY_PATH: "$LD_LIBRARY_PATH:/app/.apt/usr/lib"
-  ODBCINSTINI: "/app/.apt/usr/lib/odbc/conf/odbcinst.ini"
+  ODBCSYSINI: "/app/.apt/usr/lib/odbc/conf"
+  ODBCINI: "/app/.apt/usr/lib/odbc/conf/odbc.ini"
 EOF
