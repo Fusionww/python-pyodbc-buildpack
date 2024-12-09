@@ -10,11 +10,8 @@ SO_FILE="libmsodbcsql-18.4.so.1.1"
 arrow "Starting adding ODBC Driver 18 for SQL Server"
 BUILD_DIR=$1
 mkdir -p "${BUILD_DIR}/.apt/usr/lib/odbc/conf/"
-mkdir -p "${BUILD_DIR}/.apt/usr/share/resources/en_US/"
 cp $SO_FILE "${BUILD_DIR}/.apt/usr/lib/${SO_FILE}"
 arrow "copied ${SO_FILE}"
-cp msodbcsqlr18.rll "${BUILD_DIR}/.apt/usr/share/resources/en_US/msodbcsqlr18.rll"
-arrow "copied msodbcsqlr18.rll"
 cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini"
 arrow "copied odbcinst.ini"
 

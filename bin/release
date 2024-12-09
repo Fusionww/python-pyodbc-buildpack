@@ -1,5 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 cat <<EOF
 ---
+config:
+  LD_LIBRARY_PATH: "$LD_LIBRARY_PATH:/app/.apt/usr/lib"
+  ODBCINSTINI: "/app/.apt/usr/lib/odbc/conf/odbcinst.ini"
 EOF
