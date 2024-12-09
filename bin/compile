@@ -13,6 +13,7 @@ mkdir -p "${BUILD_DIR}/.apt/usr/lib/odbc/conf/"
 cp $SO_FILE "${BUILD_DIR}/.apt/usr/lib/${SO_FILE}"
 arrow "copied ${SO_FILE}"
 cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/conf/odbcinst.ini"
+chmod 644 /app/.apt/usr/lib/odbc/conf/odbcinst.ini
 arrow "copied odbcinst.ini"
 
 mkdir -p "${BUILD_DIR}/.profile.d"
